@@ -1,0 +1,20 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:nandha="com.mobo.printreusablee.print.model">
+	<Dialog stretch="false" verticalScrolling="false" contentWidth="100%" contentHeight="100%" afterClose="onpdfCloseDialog" title=""
+		id='pdfDialog'>
+		<customHeader>
+			<Bar>
+				<contentRight></contentRight>
+				<contentMiddle>
+					<Title text="Print Preview"/>
+				</contentMiddle>
+			</Bar>
+		</customHeader>
+		<content>
+			<core:HTML id="pdfContainer"></core:HTML>
+			<nandha:printFrag></nandha:printFrag>
+		</content>
+		<endButton>
+			<Button text="Close" press="onCloseDialog"></Button>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

@@ -1,0 +1,8 @@
+<mvc:View controllerName="com.mobo.printreusablee.print.controller.print"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns:nandha="com.mobo.printreusablee.print.model"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content />
+        <nandha:print></nandha:print> 
+    </Page>
+</mvc:View>
